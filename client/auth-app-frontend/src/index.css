@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply m-0;
+    @apply text-white;
+    font-family: cursive;
+    background: linear-gradient(to left, #1f1c18, #8e0e00);
+  }
+
+  input {
+    @apply border-b border-white;
+  }
+
+  input:focus {
+    @apply outline-none ring-0;
+    @apply border-b border-black;
+  }
+
+  h1{
+    @apply font-bold ;
+    @apply text-3xl;
+  }
+  label{
+    @apply font-semibold;
+  }
+}

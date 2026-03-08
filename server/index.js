@@ -13,7 +13,10 @@ const PORT = process.env.PORT || 3000;
 
 dbConnect();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://auth-app-frontend-d0e5.onrender.com",
+  credentials: true
+}));
 
 app.use(express.json());
 

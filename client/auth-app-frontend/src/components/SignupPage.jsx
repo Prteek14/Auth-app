@@ -24,7 +24,7 @@ const SignupPage = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/users/signup",
+        "https://auth-app-backend-ou86.onrender.com/api/users/signup",
         formData,
       );
       console.log(res.data);
